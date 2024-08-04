@@ -36,16 +36,15 @@ window.addEventListener("load", function () {
   }
 
   var buildUrl = "Build";
-  var loaderUrl = buildUrl + "/TekTest.loader.js";
+  var loaderUrl = buildUrl + "/test.loader.js";
   var config = {
-    dataUrl: buildUrl + "/TekTest.data",
-    frameworkUrl: buildUrl + "/TekTest.framework.js",
-    codeUrl: buildUrl + "/TekTest.wasm",
-    symbolsUrl: buildUrl + "/TekTest.symbols.json",
+    dataUrl: buildUrl + "/test.data",
+    frameworkUrl: buildUrl + "/test.framework.js",
+    codeUrl: buildUrl + "/test.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
-    productName: "TekTest",
-    productVersion: "1.0",
+    productName: "transaction",
+    productVersion: "0.1",
     showBanner: unityShowBanner,
   };
 
