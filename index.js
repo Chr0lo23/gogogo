@@ -41,6 +41,7 @@ window.addEventListener("load", function () {
     dataUrl: buildUrl + "/TekTest.data.br",
     frameworkUrl: buildUrl + "/TekTest.framework.js.br",
     codeUrl: buildUrl + "/TekTest.wasm.br",
+    symbolsUrl: buildUrl + "/TekTest.symbols.json.br",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "TekTest",
