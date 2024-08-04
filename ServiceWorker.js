@@ -20,7 +20,7 @@ self.addEventListener('install', function (e) {
 self.addEventListener('fetch', function (e) {
     e.respondWith((async function () {
         if (e.request.method !== 'GET') {
-            // Nu cache-ui cererile POST și altele
+            // Nu cache-ui cererile POST
             console.log(`[Service Worker] Fetching resource: ${e.request.url} (Not caching POST)`);
             return fetch(e.request);
         }
