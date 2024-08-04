@@ -38,10 +38,10 @@ window.addEventListener("load", function () {
   var buildUrl = "Build";
   var loaderUrl = buildUrl + "/TekTest.loader.js";
   var config = {
-    dataUrl: buildUrl + "/TekTest.data.br",
-    frameworkUrl: buildUrl + "/TekTest.framework.js.br",
-    codeUrl: buildUrl + "/TekTest.wasm.br",
-    symbolsUrl: buildUrl + "/TekTest.symbols.json.br",
+    dataUrl: buildUrl + "/TekTest.data",
+    frameworkUrl: buildUrl + "/TekTest.framework.js",
+    codeUrl: buildUrl + "/TekTest.wasm",
+    symbolsUrl: buildUrl + "/TekTest.symbols.json",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "TekTest",
