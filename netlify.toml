@@ -1,6 +1,6 @@
 [build]
   publish = "Build"
-  command = "npm run build" # Dacă folosești un script de build specific
+  # command = "npm run build"  # Această linie poate fi omisă dacă nu ai un script de build
 
 [[headers]]
   for = "/*"
