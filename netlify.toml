@@ -1,10 +1,4 @@
-[build]
-  publish = "Build"
-  # command = "npm run build"  # Această linie poate fi omisă dacă nu ai un script de build
-
 [[headers]]
-  for = "/*"
+for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "DENY"
+  Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
