@@ -1,6 +1,6 @@
 {
-    "name": "TekTest",
-    "short_name": "TekTest",
+    "name": "WebglTon",
+    "short_name": "WebglTon",
     "start_url": "index.html",
     "display": "fullscreen",
     "background_color": "#231F20",
