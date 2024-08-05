@@ -1,9 +1,9 @@
 const cacheName = "Tek-WebglTon-0.3";
 const contentToCache = [
-    "Build/test.loader.js",
-    "Build/test.framework.js",
-    "Build/test.data",
-    "Build/test.wasm",
+    "Build/WebGL Builds.loader.js",
+    "Build/WebGL Builds.framework.js",
+    "Build/WebGL Builds.data",
+    "Build/WebGL Builds.wasm",
     "TemplateData/style.css"
 
 ];

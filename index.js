@@ -36,11 +36,11 @@ window.addEventListener("load", function () {
   }
 
   var buildUrl = "Build";
-  var loaderUrl = buildUrl + "/test.loader.js";
+  var loaderUrl = buildUrl + "/WebGL Builds.loader.js";
   var config = {
-    dataUrl: buildUrl + "/test.data",
-    frameworkUrl: buildUrl + "/test.framework.js",
-    codeUrl: buildUrl + "/test.wasm",
+    dataUrl: buildUrl + "/WebGL Builds.data",
+    frameworkUrl: buildUrl + "/WebGL Builds.framework.js",
+    codeUrl: buildUrl + "/WebGL Builds.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "Tek",
     productName: "WebglTon",

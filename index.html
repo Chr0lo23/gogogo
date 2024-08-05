@@ -7,30 +7,6 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
-    <!-- Include Telegram Web Apps SDK -->
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-      window.addEventListener('load', function() {
-        // Initialize Telegram Web App
-        const tg = window.Telegram.WebApp;
-
-        // Wait for the Web App to be fully initialized
-        tg.ready();
-
-        // Get user data from Telegram
-        const userId = tg.initDataUnsafe.user.id;
-
-        // Function to send message to Unity
-        function sendMessageToUnity(message) {
-          if (window.unityInstance) {
-            window.unityInstance.SendMessage('GameObjectName', 'ReceiveUserId', message);
-          }
-        }
-
-        // Send user ID to Unity
-        sendMessageToUnity(userId);
-      });
-    </script>
   </head>
   <body>
     <div id="unity-container">
@@ -43,7 +19,8 @@
       </div>
       <div id="unity-warning"> </div>
     </div>
-    <!-- Your Unity WebGL build script -->
     <script src="index.js"></script>
+    <!-- Include fișierul JavaScript pentru Telegram -->
+    <script src="telegram-integration.js"></script>
   </body>
 </html>
