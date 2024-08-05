@@ -7,6 +7,21 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
+    
+    <!-- Adăugați scriptul Telegram Widget aici -->
+    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="samplebot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+    
+    <script type="text/javascript">
+      function onTelegramAuth(user) {
+        if (user) {
+          // Trimiteți informațiile utilizatorului către Unity
+          SendMessage('GameObjectName', 'ReceiveUserInfo', JSON.stringify(user));
+        } else {
+          // Trimite un mesaj de eroare dacă utilizatorul nu este logat
+          SendMessage('GameObjectName', 'ShowError', 'Utilizatorul nu este logat.');
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="unity-container">
@@ -20,7 +35,5 @@
       <div id="unity-warning"> </div>
     </div>
     <script src="index.js"></script>
-    <!-- Include fișierul JavaScript pentru Telegram -->
-    <script src="telegram-integration.js"></script>
   </body>
 </html>
