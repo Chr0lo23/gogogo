@@ -36,15 +36,16 @@ window.addEventListener("load", function () {
   }
 
   var buildUrl = "Build";
-  var loaderUrl = buildUrl + "/WebGL Builds.loader.js";
+  var loaderUrl = buildUrl + "/TekTest.loader.js";
   var config = {
-    dataUrl: buildUrl + "/WebGL Builds.data",
-    frameworkUrl: buildUrl + "/WebGL Builds.framework.js",
-    codeUrl: buildUrl + "/WebGL Builds.wasm",
+    dataUrl: buildUrl + "/TekTest.data",
+    frameworkUrl: buildUrl + "/TekTest.framework.js",
+    codeUrl: buildUrl + "/TekTest.wasm",
+    symbolsUrl: buildUrl + "/TekTest.symbols.json",
     streamingAssetsUrl: "StreamingAssets",
-    companyName: "Tek",
-    productName: "WebglTon",
-    productVersion: "0.3",
+    companyName: "DefaultCompany",
+    productName: "TekTest",
+    productVersion: "1.0",
     showBanner: unityShowBanner,
   };
 

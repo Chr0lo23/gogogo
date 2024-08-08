@@ -1,9 +1,9 @@
-const cacheName = "Tek-WebglTon-0.3";
+const cacheName = "DefaultCompany-TekTest-1.0";
 const contentToCache = [
-    "Build/WebGL Builds.loader.js",
-    "Build/WebGL Builds.framework.js",
-    "Build/WebGL Builds.data",
-    "Build/WebGL Builds.wasm",
+    "Build/TekTest.loader.js",
+    "Build/TekTest.framework.js",
+    "Build/TekTest.data",
+    "Build/TekTest.wasm",
     "TemplateData/style.css"
 
 ];
