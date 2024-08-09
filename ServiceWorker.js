@@ -7,6 +7,7 @@ const contentToCache = [
     "TemplateData/style.css"
 ];
 
+// Instalarea Service Worker-ului
 self.addEventListener('install', function (e) {
     console.log('[Service Worker] Install');
     
@@ -17,9 +18,10 @@ self.addEventListener('install', function (e) {
     })());
 });
 
+// Gestionarea cererilor
 self.addEventListener('fetch', function (e) {
     e.respondWith((async function () {
-        // Exclude POST requests from caching
+        // Exclude non-GET requests from caching (or handle them differently)
         if (e.request.method !== 'GET') {
             return fetch(e.request);
         }
@@ -36,7 +38,10 @@ self.addEventListener('fetch', function (e) {
             response = await fetch(e.request);
             const cache = await caches.open(cacheName);
             console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
-            cache.put(e.request, response.clone());
+            // Cache only successful responses
+            if (response.ok) {
+                cache.put(e.request, response.clone());
+            }
             return response;
         } catch (error) {
             console.error('Fetch failed; returning offline page instead.', error);
