@@ -1,9 +1,9 @@
-const cacheName = "DefaultCompany-TekTest-1.0";
+const cacheName = "DefaultCompany-transaction-0.1";
 const contentToCache = [
-    "Build/TekTest.loader.js",
-    "Build/TekTest.framework.js",
-    "Build/TekTest.data",
-    "Build/TekTest.wasm",
+    "Build/WebGL Builds.loader.js",
+    "Build/WebGL Builds.framework.js",
+    "Build/WebGL Builds.data",
+    "Build/WebGL Builds.wasm",
     "TemplateData/style.css"
 
 ];

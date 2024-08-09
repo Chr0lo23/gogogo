@@ -1,11 +1,11 @@
 {
-    "name": "TekTest",
-    "short_name": "TekTest",
+    "name": "transaction",
+    "short_name": "transaction",
     "start_url": "index.html",
     "display": "fullscreen",
     "background_color": "#231F20",
     "theme_color": "#000",
-    "description": "",
+    "description": "test",
     "icons": [{
       "src": "TemplateData/icons/unity-logo-dark.png",
       "sizes": "144x144",
